@@ -13,6 +13,10 @@ function update()
     if (keyboard.pressed("down"))
         player1.decelerate(moveDistance);
 
+    enemy1.move();
+    //if (enemy1.graphic.position.x <= 800 && enemy1.graphic.position.x >= 300) {
+    //  enemy1.graphic.position.x -= 6;
+    //}
     player1.move();
     controls.update();
 }
